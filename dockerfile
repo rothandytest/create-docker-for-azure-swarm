@@ -1,8 +1,8 @@
 FROM microsoft/dotnet:sdk AS build-env
 WORKDIR /app
-COPY *.csproj ./
+COPY app/*.csproj ./
 RUN dotnet restore
-COPY . ./
+COPY app ./
 RUN dotnet publish -c Release -o out
 
 FROM andrewroth/dotnetcore-with-azure-cli:runtime
