@@ -1,4 +1,4 @@
-Source: https://github.com/RothAndrew/create-docker-for-azure-swarm
+Docker Hub: https://hub.docker.com/r/andrewroth/create-docker-for-azure-swarm/
 
 Running this container does the following:
   1. Logs into Azure CLI
