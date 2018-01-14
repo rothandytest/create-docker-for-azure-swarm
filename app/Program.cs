@@ -76,6 +76,8 @@ namespace app
                 sb.AppendLine("    How many worker nodes you want. Default: 1");
                 sb.AppendLine("--swarm-name");
                 sb.AppendLine("    Define how the swarm resources should be named. Default: dockerswarm");
+                Console.Write(sb.ToString());
+                Environment.Exit(1);
             }
 
             if (!Tools.IsLoggedIn())
